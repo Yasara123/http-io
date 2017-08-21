@@ -5,8 +5,8 @@
 | :------ |:------------ | 
 | master  | [![Build Status](https://wso2.org/jenkins/view/All%20Builds/job/siddhi/job/siddhi-io-http/badge/icon)](https://wso2.org/jenkins/view/All%20Builds/job/siddhi/job/siddhi-io-http/) |
 ---
-[![codecov.io](http://codecov.io/github/Yasara123/http-io/coverage.svg?branch=master)]
-(http://codecov.io/github/Yasara123/http-io?branch=master)
+ [![codecov.io](https://codecov.io/github/Yasara123/http-io/coverage.svg?branch=master)](https://codecov
+ .io/github/Yasara123/http-io?branch=master)
 ##### New version of Siddhi v4.0.0 is built in Java 8.
 
 This is a http input and output extension for siddhi source and sink implementation. This extension only works inside 
