@@ -32,7 +32,6 @@
     </scm>
     <modules>
         <module>component</module>
-        <module>tests</module>
     </modules>
     <groupId>org.wso2.extension.siddhi.io.http</groupId>
     <artifactId>siddhi-io-http-parent</artifactId>
@@ -47,7 +46,6 @@
             </activation>
             <modules>
                 <module>component</module>
-                <module>tests</module>
             </modules>
         </profile>
     </profiles>
@@ -381,10 +379,6 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>${maven.shadeplugin.version}</version>
             </plugin>
@@ -402,17 +396,12 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.8</version>
+                <version>0.7.7.201606060606</version>
                 <executions>
                     <execution>
-                        <id>jacoco-initialize</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
-                        <configuration>
-                            <destFile>${basedir}/target/jacoco.exec</destFile>
-                            <propertyName>surefireArgLine</propertyName>
-                        </configuration>
                     </execution>
                     <execution>
                         <id>report</id>
@@ -420,17 +409,6 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
-                    </execution>
-                    <execution>
-                        <id>jacoco-site</id>
-                        <phase>post-integration-test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                        <configuration>
-                            <dataFile>${basedir}/target/jacoco.exec</dataFile>
-                            <outputDirectory>${basedir}/target/coverage-reports/</outputDirectory>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>

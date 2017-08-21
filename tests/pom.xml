@@ -34,7 +34,5 @@
         <module>coverage-report</module>
     </modules>
 
-    <properties>
-        <surefireArgLine />
-    </properties>
+
 </project>
